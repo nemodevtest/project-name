@@ -2,30 +2,33 @@
   "name": "project-name",
   "version": "1.0.0",
   "description": "Mi primer proyecto JavaScript",
-  "main": "index.js",
-  "scripts": {
-    "dev": "servor src/ index.html 1234 --reload",
-    "lint": "oxlint src/",
-    "format": "oxfmt src/"
-  },
   "keywords": [
     "Javascript",
     "html"
   ],
-  "author": "",
   "license": "MIT",
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "11.23.0",
-      "onFail": "download"
-    }
-  },
-  "packageManager": "pnpm@11.23.0",
+  "author": "",
   "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "servor src/ index.html 1234 --reload",
+    "lint": "oxlint src/",
+    "format": "oxfmt src/",
+    "build": "echo Comando reservado",
+    "deploy": "gh-pages -d src/"
+  },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "oxfmt": "^0.65.0",
     "oxlint": "^1.80.0",
     "servor": "^4.0.2"
-  }
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.25.0",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@11.25.0"
 }
